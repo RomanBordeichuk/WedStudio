@@ -1,0 +1,550 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+}
+
+/************************
+********HEADER***********
+************************/
+
+
+
+header{
+	padding: 50px;
+	background: #445162;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+header .head_info{
+	padding-right: 20px;
+}
+header h1{
+	font-weight: normal;
+	color: white;
+	font-size: 50px;
+}
+header li{
+	color: white;
+	display: inline-block;
+	height: 45px;
+	font-size: 20px;
+	position: relative;
+	left: 20px;
+}
+header li:before{
+	content: "✓";
+	width: 40px;
+	height: 40px;
+	position: relative;
+	right: 20px;
+	font-weight: bold;
+	font-size: 30px;
+}
+header .img{
+	width: 35%;
+	height: 255px;
+}
+header img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+
+
+/*********************************
+*********GENERAL INFO*************
+*********************************/
+
+
+
+.main{
+	position: relative;
+}
+.general_info{
+	padding-bottom: 70px;
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.general_info_text{
+	width: 55%;
+}
+.general_info h2{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: #505d6c;
+}
+.general_info p{
+	font-size: 15px;
+	color: #5c5c5c;
+	line-height: 30px;
+	margin-top: 20px;
+}
+.general_info .img{
+	width: 40%;
+	height: 250px;
+}
+.general_info img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+/*******************************
+***********ADVANTAGES***********
+*******************************/
+
+
+
+.advantages{
+	background: #f5f5f5;
+	padding: 50px;
+}
+.advantages h2{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: #505d6c;
+	text-align: center;
+}
+.advantages > div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.advantages > div > div{
+	margin-top: 30px;
+	width: 48%;
+	display: flex;
+	align-items: flex-start;
+}
+.advantages p{
+	font-size: 15px;
+	color: #5c5c5c;
+	line-height: 30px;
+}
+.advantages img{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	right: 10px;
+	top: 10px;
+}
+
+
+
+/****************************
+*******SCREENSHOTS***********
+****************************/
+
+
+
+.screenshots{
+	padding: 50px;
+}
+.screenshots .images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.screenshots .images > div{
+	width: 48%;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.screenshots h2{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #505d6c;
+	text-align: center;
+}
+.screenshots .img{
+	width: 200px;
+	height: 150px;
+	transition: 1s;
+}
+.screenshots .img:hover{
+	transform: scale(1.2);
+}
+.screenshots img{
+	width: 200px;
+	height: 150px;
+	background: #445161;
+	object-fit: cover;
+}
+.screenshots .info{
+	margin-left: 30px;
+}
+.screenshots h3{
+	font-weight: normal;
+	font-size: 20px;
+	color: #505d6c;
+}
+.screenshots p{
+	font-size: 15px;
+	color: #5c5c5c;
+	line-height: 27px;
+}
+
+
+
+/**************************
+*********REWIEVS***********
+**************************/
+
+
+
+.rewievs{
+	padding: 50px;
+	background: #f5f5f5;
+}
+.rewievs_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.rewievs_wrap > div{
+	margin-bottom: 40px;
+	width: 48%;
+	display: flex;
+}
+.rewiev_text{
+	margin-left: 30px;
+}
+.rewievs h2{
+	text-align: center;
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #505d6c;
+}
+.rewievs .circle{
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border: 50px solid #445161;
+	border-radius: 50px;
+	position: relative;
+	top: 20px; 
+}
+.rewievs p{
+	background: #ebebeb;
+	color: #5c5c5c;
+	font-style: italic;
+	line-height: 26px;
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+.rewievs span{
+	color: #989898;
+}
+.rewievs p:before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -40px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right: 20px solid #ebebeb;
+}
+
+
+
+/*****************************
+********BUY IT NOW************
+*****************************/
+
+
+
+.buy_it{
+	padding: 50px;
+}
+.buy_it_wrap{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.buy_it_wrap > div{
+	border: 1px solid #445162;
+	margin-bottom: 50px;
+}
+.buy_it h2{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #505d6c;
+	text-align: center;
+}
+.Standart{
+	background: #445162;
+	width: 300px;
+	border-radius: 10px;
+}
+.Premium{
+	background: #445162;
+	width: 300px;
+	border-radius: 10px;
+}
+.Lux{
+	background: #445162;
+	width: 300px;
+	border-radius: 10px;
+}
+.buy_it h3{
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	padding: 25px 0;
+	font-size: 25px;
+}
+.buy_it span{
+	display: block;
+	background: white;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 25px;
+	color: #445162;
+}
+.buy_it ol{
+	position: relative;
+	left: 35px;
+	top: 5px;
+	padding: 20px 0;
+	color: white;
+	font-size: 13px;
+	line-height: 27px;
+}
+.buy_it .buy{
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 15px;
+	color: #445162;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.2s;
+}
+.buy:hover{
+	background-color: #505d6c;
+	color:#fff;
+	transition: 0.2s;
+}
+
+
+
+/*************************
+***********FOOTER*********
+*************************/
+
+
+
+footer{
+	padding: 20px;
+	background: #445162;
+	padding-top: 50px;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+footer h2{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: white;
+	text-align: center;
+}
+footer .footer_wrap{
+	display: flex;
+	width: 60%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+footer .social{
+	order: 1;
+	margin-left: 50px;
+}
+.nav_social{
+	display: flex;
+	flex-direction: row;
+}
+.social__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+}
+.social__icon {
+		display: block;
+		fill: #fff;
+		transition: fill .1s linear;
+}
+
+
+.social__item:hover .social__icon {
+		fill: grey;
+		background-color:#;
+}
+footer img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+footer p{
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	color: white;
+
+
+}
+
+.nav_social{
+	position: relative;
+	top: 20px;
+}
+.nav_social img{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+footer .social div{
+	margin-top: 10px;
+}
+input, textarea{
+	display: block;
+	border: 0 solid transparent;
+}
+.name{
+	border-radius: 10px;
+	padding: 15px;
+	width: calc(100% - 30px);
+}
+.email{
+	margin-top: 20px;
+	border-radius: 10px;
+	padding: 15px;
+	width: calc(100% - 30px);
+}
+textarea{
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	width: 450px;
+}
+.send{
+	padding: 10px;
+	border-radius: 10px;
+	width: 150px;
+	text-align: center;
+	margin-top: 25px;
+	position: relative;
+	left: 160px;
+	font-weight: bold;
+	color: #445162;
+	background: white;
+}
+
+
+@media(max-width: 1050px){
+	header .img{
+		display: none;
+	}
+	.general_info{
+		flex-direction: column-reverse;
+	}
+	.general_info .img{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.general_info_text{
+		width: 100%;
+		text-align: justify;
+	}
+	.screenshots .images{
+		display: block;
+	}
+	.screenshots .images > div{
+		width: 100%;
+	}
+	.rewievs_wrap{
+		display: block;
+	}
+	.rewievs_wrap > div{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.buy_it_wrap{
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .footer_wrap{
+		width: 100%;
+	}
+	footer > div{
+		flex-direction: column-reverse;
+	}
+	.social{
+		margin-bottom: 50px;
+	}
+	.name{
+		width: calc(100% - 30px);
+	}
+	.email{
+		width: calc(100% - 30px);
+	}
+	textarea{
+		width: calc(100% - 25px);
+	}
+}
+@media(max-width: 830px){
+	.advantages > div{
+		display: block;
+	}
+	.advantages > div > div{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.screenshots .images > div{
+		display: block;
+		margin-bottom: 100px;
+	}
+	.screenshots .images .img{
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.screenshots .images img{
+		width: 100%;
+		object-fit: cover;
+	}
+	.screenshots .images .info{
+		margin-left: 0;
+	}
+}
